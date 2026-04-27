@@ -505,3 +505,11 @@ Module responsibilities:
 - `experiments/`: configuration loading and experiment assembly.
 - `visualization/`: ACM-style plots and diagnostics.
 - root scripts: reproducible command-line entry points.
+
+## AI Usage
+
+AI tools were used as supporting assistants in the preparation of this project. In particular, they were used for:
+
+- formatting and polishing LaTeX code for mathematical statements and proofs;
+- improving repository presentation and README organization;
+- assisting with the generation and refinement of project animations.
