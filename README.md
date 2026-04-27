@@ -20,7 +20,7 @@ V_\gamma(x(\tau_\gamma),\tilde\theta(\tau_\gamma))
 </p>
 
 <p align="center">
-  <video src="adaptive_ship_stabilization.mp4" width="700" controls loop muted playsinline></video>
+  <video src="adaptive_ship_stabilization.gif" width="700" controls loop muted playsinline></video>
 </p>
 <p align="center">
   <em>Physical-system animation: ship-roll response under the stabilization controller.</em>
