@@ -1,0 +1,35 @@
+{
+  "system": {
+    "c_damp": 0.85,
+    "k_restoring": 2.2
+  },
+  "controller": {
+    "K": [-3.8, -2.4],
+    "a_loc": 0.2,
+    "eta_margin": 0.06,
+    "R_theta": 0.65,
+    "gamma_eta_factor": 1.05,
+    "gamma_factor": 1.25,
+    "outer_g_min": 1e-6
+  },
+  "wave": {
+    "beam": 2.8,
+    "mu_wave": 1.0,
+    "n_wave": 30,
+    "seed": 12,
+    "amp_min": 0.1,
+    "amp_span": 0.08,
+    "omega_min": 0.35,
+    "omega_max": 3.5,
+    "wave_number_scale": 0.65,
+    "theta_star_radius_fraction": 0.85
+  },
+  "simulation": {
+    "x0": [0.95, 0.0],
+    "t0": 0.0,
+    "tf": 45.0,
+    "dt": 0.005,
+    "state_max_norm": 50.0
+  }
+}
+
