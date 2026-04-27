@@ -1,9 +1,21 @@
 # Adaptive Ship-Roll Stabilization with Hybrid Lyapunov-PDE Control
 
-This project studies adaptive stabilization of a nonlinear ship-roll model under an unknown matched wave-induced moment. The proposed controller combines an outer Lyapunov-PDE controller, a local adaptive stabilizer, and a projected parameter estimator. The project also includes the mandatory Project 2 comparison against nonadaptive and non-hybrid baselines.
+This project studies adaptive stabilization of a nonlinear ship-roll model under an unknown matched wave-induced moment. The proposed controller combines an outer Lyapunov-PDE controller, a local adaptive stabilizer, and a projected parameter estimator. 
 
-The concept animation is generated with the local ManimGL checkout and saved as `animations/idea.gif`.
+The main result is that the implementable switching condition places the trajectory inside the extended Lyapunov-certified local set:
 
+```math
+V_\gamma(x(\tau_\gamma),\tilde\theta(\tau_\gamma))
+\le
+\bar a.
+```
+
+<p align="center">
+  <img src="animations/idea.gif" alt="hybrid adaptive control concept animation" width="700">
+</p>
+<p align="center">
+  <em>Concept animation: the outer adaptive Lyapunov-PDE law drives the roll state into the implementable switching set, while the adaptive Fourier estimate learns the unknown wave moment; after the transient, \(\hat d(t)\) follows \(d(t)\) and the residual error becomes small.</em>
+</p>
 ## Problem Definition
 
 The control task is to stabilize the upright roll equilibrium
@@ -398,21 +410,6 @@ min |gradW^T B| in outer mode = 3.907469e-03
 max |u| total = 14.898050
 max |d_param - d_wave| = 5.939693e-15
 ```
-
-The main result is that the implementable switching condition places the trajectory inside the extended Lyapunov-certified local set:
-
-```math
-V_\gamma(x(\tau_\gamma),\tilde\theta(\tau_\gamma))
-\le
-\bar a.
-```
-
-<p align="center">
-  <img src="animations/idea.gif" alt="hybrid adaptive control concept animation" width="700">
-</p>
-<p align="center">
-  <em>Concept animation: the outer adaptive Lyapunov-PDE law drives the roll state into the implementable switching set, while the adaptive Fourier estimate learns the unknown wave moment; after the transient, \(\hat d(t)\) follows \(d(t)\) and the residual error becomes small.</em>
-</p>
 
 <p align="center">
   <img src="figures/hybrid_adaptive_control/plots.png" alt="hybrid adaptive controller plots" width="700">
