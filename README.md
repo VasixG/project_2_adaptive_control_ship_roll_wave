@@ -512,4 +512,5 @@ AI tools were used as supporting assistants in the preparation of this project. 
 
 - formatting and polishing LaTeX code for mathematical statements and proofs;
 - improving repository presentation and README organization;
-- assisting with the generation and refinement of project animations.
+- assisting with the generation and refinement of project animations,
+- assisting with plots generation.
