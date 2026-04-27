@@ -16,7 +16,7 @@ V_\gamma(x(\tau_\gamma),\tilde\theta(\tau_\gamma))
   <img src="animations/idea.gif" alt="hybrid adaptive control concept animation" width="700">
 </p>
 <p align="center">
-  <em>Concept animation: the outer adaptive Lyapunov-PDE law drives the roll state into the implementable switching set, while the adaptive Fourier estimate learns the unknown wave moment; after the transient, \(\hat d(t)\) follows \(d(t)\) and the residual error becomes small.</em>
+  <em>Concept animation: the outer adaptive Lyapunov-PDE law drives the roll state into the switching set, while the adaptive estimator learns the unknown wave moment.</em>
 </p>
 
 <p align="center">
