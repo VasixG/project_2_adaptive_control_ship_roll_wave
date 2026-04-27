@@ -2,6 +2,8 @@
 
 This project studies adaptive stabilization of a nonlinear ship-roll model under an unknown matched wave-induced moment. The proposed controller combines an outer Lyapunov-PDE controller, a local adaptive stabilizer, and a projected parameter estimator. 
 
+For a more detailed mathematical proofs of the hybrid adaptive construction, see [math_appendix.pdf](math_appendix.pdf).
+
 The main result is that the implementable switching condition places the trajectory inside the extended Lyapunov-certified local set:
 
 ```math
@@ -18,7 +20,7 @@ V_\gamma(x(\tau_\gamma),\tilde\theta(\tau_\gamma))
 </p>
 
 <p align="center">
-  <video src="animations/ship_stabilization_3.mp4" width="700" controls loop muted playsinline></video>
+  <video src="adaptive_ship_stabilization.mp4" width="700" controls loop muted playsinline></video>
 </p>
 <p align="center">
   <em>Physical-system animation: ship-roll response under the stabilization controller.</em>
